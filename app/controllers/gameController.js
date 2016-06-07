@@ -10,7 +10,9 @@ function GameController() {
     this.player2 = new PlayerModel();
 
     GameController.prototype.bindPlayerClickerEvent.call(this);
+
     GameController.prototype.bindHandsClickerEvent.call(this);
+
 }
 
 GameController.prototype.resetPlayer = function () {
