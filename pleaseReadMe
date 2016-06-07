@@ -1,0 +1,16 @@
+First of all I really enjoyed this test, mainly because it brings to surface the reason why we use MVC frameworks to organize our code and since this was made without any frameworks it really brought home some of the challenges in trying to separate concerns without any guidance.
+
+The project is organized using Model, View and Controller as well as a service that decides the winning hand.
+
+I thought very carefully about what code to test and choose to adopt a BDD approach which only looks at 'what' the code is doing, not the implementation of the code.
+
+For this reason only the PlayerModel and DecisionService were tested because they dictate all of the behavior of the project.
+
+The Controller is not test because it uses entities that have already been tested and simply calls object methods based on user interaction.
+
+Similar the View is not test because all the the code is simple native JS.
+
+To run the project
+
+1. npm install
+2. grunt dev
